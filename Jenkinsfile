@@ -14,7 +14,7 @@ pipeline
        {
          steps
          {
-           mvn -f C:\Users\User\.jenkins\workspace\MavenScriptingithub\Mavenpipeline\pom.xml test package
+           bat 'mvn -f C:\Users\User\.jenkins\workspace\MavenScriptingithub\Mavenpipeline\pom.xml test package'
          }
        }      
    }
