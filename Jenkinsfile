@@ -16,7 +16,14 @@ pipeline
          {
            bat 'mvn -f C:\\Users\\User\\.jenkins\\workspace\\MavenScriptingithub\\Mavenpipeline\\pom.xml test package'
          }
-       }      
+       } 
+       post
+       {
+         always
+         {
+           junit 'Mavenpipeline\\target\\surefire-reports\\*.xml'
+         }
+       }
    }
  }
 
