@@ -21,7 +21,7 @@ pipeline
        {
          steps
          {
-           junit 'Mavenpipeline\\target\\surefire-reports\\*.xml'
+           junit 'Mavenpipeline\\target\\surefire-reports\\Test-*.xml'
          }
        }
    }
